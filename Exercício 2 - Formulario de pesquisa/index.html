@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" sizes="72x72" href="https://img.icons8.com/color/32/000000/fill-in-form.png"/>
+  <title>Formulário</title>
+</head>
+<body>
+
+  <header>Formulário com Validação Nativa</header>
+  <main>
+    <form method="POST" action="index.php" enctype="multipart/form-data">
+      <input type="hidden" name="country" value="BR">
+  
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label>
+          Primeiro Nome :<br/>
+          <input type="text" name="name" required minlength="2" maxlength="10" autofocus placeholder="Nome">
+        </label>
+        <br/><br/>
+        <label>
+          Sobrenome :<br/>
+          <input type="text" name="lastname" required placeholder="Sobrenome" autofocus>
+        </label>
+        <br/><br/>
+        <label>
+          Email :<br/>
+          <input type="email" name="email" pattern="(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)" required title="Endereço de email" autofocus placeholder="Email">
+        </label>
+        <br/><br/>
+        <label>
+          Data de Nascimento :<br/>
+          <input type="date" name="birthdate" min="1970-01-01" required autofocus>
+        </label>
+      </fieldset>
+      
+      </br>
+
+      <fieldset>
+        <legend>Endereço</legend>
+        <label>
+          CEP :<br/>
+          <input type="text" name="endereco" autofocus placeholder="CEP">
+        </label>
+        <br/><br/>
+        <label>
+          Número :<br/>
+          <input type="text" name="endereco" autofocus placeholder="Número">
+        </label>
+        <br/><br/>
+        <label>
+          Complemento :<br/>
+          <input type="text" name="endereco" autofocus placeholder="Complemento">
+        </label>
+        <br/><br/>
+        <label>
+          Estado :<br/>
+        <select>
+          <option value="Estado">Selecione um estado</option>
+                      <option value="AC">Acre</option>
+                      <option value="AL">Alagoas</option>
+                      <option value="AP">Amapá</option>
+                      <option value="AM">Amazonas</option>
+                      <option value="BA">Bahia</option>
+                      <option value="CE">Ceará</option>
+                      <option value="DF">Distrito Federal</option>
+                      <option value="ES">Espírito Santo</option>
+                      <option value="GO">Goiás</option>
+                      <option value="MA">Maranhão</option>
+                      <option value="MT">Mato Grosso</option>
+                      <option value="MS">Mato Grosso do Sul</option>
+                      <option value="MG">Minas Gerais</option>
+                      <option value="PA">Pará</option>
+                      <option value="PB">Paraíba</option>
+                      <option value="PR">Paraná</option>
+                      <option value="PE">Pernambuco</option>
+                      <option value="PI">Piauí</option>
+                      <option value="RJ">Rio de Janeiro</option>
+                      <option value="RN">Rio Grande do Norte</option>
+                      <option value="RS">Rio Grande do Sul</option>
+                      <option value="RO">Rondônia</option>
+                      <option value="RR">Roraima</option>
+                      <option value="SC">Santa Catarina</option>
+                      <option value="SP">São Paulo</option>
+                      <option value="SE">Sergipe</option>
+                      <option value="TO">Tocantins</option>
+              </select>
+            </label>
+      </fieldset>  
+      <input type="submit" value="cadastrar">
+    </form>
+  </main>
+</body>
+</html>

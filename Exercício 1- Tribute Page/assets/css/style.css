@@ -1,0 +1,77 @@
+/* Ajustes para navegadores */
+body{
+  background: #FFA500;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #E7E9BB, #FFA500);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E7E9BB, #FFA500); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Varela Round', sans-serif;
+}
+
+#principal {
+  text-align:center;
+  max-width:100%;
+}
+
+img {
+  max-width:100%;
+  border-radius:15px;
+  box-shadow:2px 5px;
+  display: block;
+  margin: 0 auto;
+}
+
+#img-caption {
+  width:100%;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+ul {
+  text-align:left;
+}
+
+li {
+  list-style:none;
+}
+
+.titulo h1 {
+  font-size:40px;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+}
+
+.titulo p {
+  text-align: justify;
+}
+
+p {
+  font-family: 'Varela Round', sans-serif;
+  font-size:20px;
+}
+
+h2 {
+  color:black;
+  text-align: center;
+  font-size: 40px;
+}
+
+.timeline {
+  display: inline-block;
+  justify-content: flex-end;
+}
+
+footer,
+footer a {
+  text-align: center;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #0000FF;
+}
+
+/* Responsividade */
+
+
+
+
