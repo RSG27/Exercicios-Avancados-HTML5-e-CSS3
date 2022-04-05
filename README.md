@@ -6,5 +6,5 @@ Desafios propostos no curso B7Web
 
 <ol>
   <li><a href="https://adoring-wiles-a257af.netlify.app">Tribute Page - Gandhi</a></li>
-  <li><a href="https://laughing-nobel-179bf5.netlify.app">Form - Validação Nativa</a></li>
+  <li><a href="https://loquacious-malasada-da1459.netlify.app/">Form - Validação Nativa</a></li>
 </ol>
