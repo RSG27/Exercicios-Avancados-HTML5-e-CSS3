@@ -12,7 +12,7 @@ body {
 	background-color:#353535;
 }
 .topointerior {
-	width:1000px;
+	width:900px;
 	margin:auto;
 	color:#FFFFFF;
 }
@@ -22,6 +22,7 @@ body {
 	line-height: 50px;
 }
 .menu {
+	display: right;
 	float:right;
 }
 .menu ul,
@@ -60,6 +61,7 @@ body {
 .bannerdireita {
 	float:right;
 }
+
 .bannerdireita img {
 	margin-top: 50px;
 	margin-right: 100px;
@@ -149,25 +151,3 @@ footer a {
 footer a:hover {
 	color: #ffc001;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
