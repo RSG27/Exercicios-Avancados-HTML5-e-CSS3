@@ -1,8 +1,5 @@
 * {
 	font-family: 'Permanent Marker', cursive;
-}
-
-body {
 	margin:0;
 	padding:0;
 }
@@ -12,11 +9,13 @@ body {
 	background-color:#353535;
 }
 .topointerior {
-	width:900px;
+	width: 90%;
+	max-width:900px;
 	margin:auto;
 	color:#FFFFFF;
 }
 .logomarca {
+	display: flex;
 	float:left;
 	font-size:24px;
 	line-height: 50px;
@@ -67,13 +66,6 @@ body {
 	margin-right: 100px;
 	margin-bottom: 100px;
 	max-width: 100%;
-	transition: all 0.5s;
-  cursor: pointer;
-}
-
-.bannerdireita img:hover {
-	-webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-  filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
 }
 
 .frase1 {
@@ -154,10 +146,9 @@ footer a:hover {
 
 @media(max-width: 600px) {
 	.topo, .banner, footer {
-		width: 100%;
+		width: 180vw;
 	}
 	.topointerior  {
-		width: 100%;
 		display: flex;
 		flex-direction: column;
 	}
@@ -169,26 +160,35 @@ footer a:hover {
 		flex-direction: column;
 		align-items: center;		
 	}
-	.frase1,.frase2  {
-		padding-left: 10px;
-	}
+	
 	.botao, .botao a {
-		margin: 10px;
-		padding: 10px;
+		width: 80%;
+		font-size: 15px;
+		margin: 30px;
 	}
 	.bannerdireita {
 		display: none;
 	}
 	.fotos img{
-		width: 25%;
+		width: 30%;
 		display: flex;
 		flex-direction: column;
 		padding-left: 40px;
 	}
-	.integrantes-originais p {
+	.integrantes-originais p,
+	footer p {
 		text-align: left;
 		font-size: 15px;
 		padding-left: 40px;
 	}
-
 }
+
+@media(width: 768px) {
+	html, body {
+		width: 180vh;
+	}
+	.banner {
+		width: 100%;
+	}
+}
+
