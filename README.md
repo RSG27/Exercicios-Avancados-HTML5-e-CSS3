@@ -11,4 +11,5 @@ OBS: Fanpage do One Piece em processo de produção da responsividade.
   <li><a href="https://loquacious-malasada-da1459.netlify.app/">Form - Validação Nativa</a></li>
   <li><a href="https://stately-dasik-9c28ba.netlify.app/">Fanpage One Piece</a></li>
   <li><a href="https://iridescent-peony-a9bfbe.netlify.app/">Botões Animados CSS</a></li>
+  <li><a href="https://classy-nougat-ac5bdd.netlify.app/">Tabela Zebrada</a></li>
 </ol>
