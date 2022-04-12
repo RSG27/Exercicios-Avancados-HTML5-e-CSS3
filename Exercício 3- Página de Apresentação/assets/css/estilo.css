@@ -2,48 +2,26 @@
 	font-family: 'Permanent Marker', cursive;
 	margin:0;
 	padding:0;
+	box-sizing: border-box;
 }
 
 .topo {
 	height:50px;
 	background-color:#353535;
+	margin: 0 auto;
 }
 .topointerior {
-	width: 90%;
-	max-width:900px;
+	width:100%;
+	max-width: 1000px;
 	margin:auto;
 	color:#FFFFFF;
 }
 .logomarca {
+	margin-left: 30px;
 	display: flex;
-	float:left;
+	justify-content: center;
 	font-size:24px;
 	line-height: 50px;
-}
-.menu {
-	display: right;
-	float:right;
-}
-.menu ul,
-.menu li {
-	margin:0;
-	padding:0;
-	list-style:none;
-}
-.menu li {
-	float:left;
-	padding-left:10px;
-	padding-right:10px;
-	line-height: 50px;
-	font-size:14px;
-	cursor:pointer;
-}
-.menu li:hover {
-	background-color:#00BFFF;
-}
-.menu li a {
-	text-decoration: none;
-	color: #FFFFFF;
 }
 
 .banner {
@@ -52,20 +30,13 @@
 }
 .bannerinterior {
 	width:1000px;
-	margin:auto;
+	margin:0 auto;
 }
-.banneresquerda {
-	float:left;
-}
-.bannerdireita {
-	float:right;
-}
-
-.bannerdireita img {
-	margin-top: 50px;
-	margin-right: 100px;
-	margin-bottom: 100px;
-	max-width: 100%;
+.bannercentral {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .frase1 {
@@ -106,12 +77,11 @@
 .integrantes-originais {
 	height:90px;
 	font-size:20px;
-	justify-content: center;
 	line-height:90px;
 }
 
 .integrantes-originais p {
-	text-align: end;
+	text-align: center;
 }
 
 .fotos img {
@@ -146,49 +116,44 @@ footer a:hover {
 
 @media(max-width: 600px) {
 	.topo, .banner, footer {
-		width: 180vw;
+		width: 100%;
+	}
+	.logomarca {
+		margin-left: 30px;
+	}
+	.bannercentral {
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		align-items: flex-start;
+	}
+	.frase1,
+	.frase2 {
+		margin-left: 90px;
 	}
 	.topointerior  {
 		display: flex;
 		flex-direction: column;
 	}
-	.logomarca {
-		display: none;
-	}
-	.banneresquerda{
-		display: flex;
-		flex-direction: column;
-		align-items: center;		
-	}
-	
 	.botao, .botao a {
-		width: 80%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		font-size: 15px;
 		margin: 30px;
-	}
-	.bannerdireita {
-		display: none;
 	}
 	.fotos img{
 		width: 30%;
 		display: flex;
 		flex-direction: column;
-		padding-left: 40px;
+		padding-left: 30px;
 	}
 	.integrantes-originais p,
 	footer p {
-		text-align: left;
+		text-align: start;
+		margin-left: 70px;
 		font-size: 15px;
-		padding-left: 40px;
 	}
 }
 
-@media(width: 768px) {
-	html, body {
-		width: 180vh;
-	}
-	.banner {
-		width: 100%;
-	}
-}
 
